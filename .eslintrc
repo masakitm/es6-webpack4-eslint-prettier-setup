@@ -2,6 +2,6 @@
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier", "react", "jsx-a11y", "import"],
   "rules": {
-    "prettier/prettier": "error"
+    "quotes": ["error", "single"]
   }
 }

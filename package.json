@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --hot --host 0.0.0.0",
+    "start": "webpack-dev-server --hot",
     "build": "webpack -p",
     "watch": "webpack --watch",
     "lint": "node_modules/.bin/eslint 'src/**/*.js' --fix"

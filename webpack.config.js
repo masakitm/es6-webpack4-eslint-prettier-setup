@@ -1,12 +1,12 @@
 module.exports = {
-  mode: "development",
-  entry: `./src/index.js`,
+  mode: 'development',
+  entry: './src/index.js',
   output: {
     path: `${__dirname}/dist`,
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   devServer: {
-    contentBase: "dist",
+    contentBase: 'dist',
     open: true
   }
 };
