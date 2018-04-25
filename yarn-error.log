@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/masaki.tomotsuka/.nodebrew/node/v8.9.4/bin/node /Users/masaki.tomotsuka/.nodebrew/current/bin/yarn sgtart
+  /Users/masaki.tomotsuka/.nodebrew/node/v8.9.4/bin/node /Users/masaki.tomotsuka/.nodebrew/current/bin/yarn update
 
 PATH: 
   /Users/masaki.tomotsuka/.nodebrew/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/masaki.tomotsuka/.nodebrew/current/bin
@@ -6033,7 +6033,7 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: Command "sgtart" not found. Did you mean "start"?
+  Error: Command "update" not found.
       at new MessageError (/Users/masaki.tomotsuka/.nodebrew/node/v8.9.4/lib/node_modules/yarn/lib/cli.js:186:110)
       at /Users/masaki.tomotsuka/.nodebrew/node/v8.9.4/lib/node_modules/yarn/lib/cli.js:87307:17
       at Generator.next (<anonymous>)
