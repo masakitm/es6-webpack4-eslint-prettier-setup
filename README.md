@@ -17,10 +17,10 @@ for devDependencies
 
 babel-core             (webpack)
 babel-loader           (webpack)
-babel-preset-env       (webpack)
 babel-preset-react     (JSX / flow)
 babel-preset-flow      (flow)
 babel-eslint           (flow)
+babel-preset-env       (old browsers)
 babel-polyfill         (old browsers)
 
 flow-bin               (flow, `$ yarn flow init` => `$ flow` to check types)
