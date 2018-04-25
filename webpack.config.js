@@ -6,13 +6,13 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: `${__dirname}/dist`,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   // dir for dev-server
   devServer: {
     contentBase: 'dist',
-    open: true
+    open: true,
   },
 
   module: {
@@ -22,9 +22,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
-      }
-    ]
-  }
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
 };
