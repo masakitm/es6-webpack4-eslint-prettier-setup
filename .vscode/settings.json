@@ -3,4 +3,6 @@
   "prettier.eslintIntegration": false,
   "eslint.autoFixOnSave": true,
   "git.ignoreLimitWarning": true,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false
 }

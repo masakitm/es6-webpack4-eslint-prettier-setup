@@ -1,5 +1,5 @@
 # env setup
-# eslint + airbnb + prettier + Flow + babel
+# eslint + airbnb + prettier + flow + babel
 
 links
 * https://www.kken.io/posts/prettier-eslint/
@@ -9,20 +9,21 @@ links
 
 format on save: eslint => prettier
 
-## packages
+## npm packages
 for devDependencies
 
 ```
-// package name => what for
+// package name        (what for)
 
 babel-core             (webpack)
 babel-loader           (webpack)
 babel-preset-env       (webpack)
-babel-preset-react     (JSX / Flow)
+babel-preset-react     (JSX / flow)
 babel-preset-flow      (flow)
+babel-eslint           (flow)
 babel-polyfill         (old browsers)
 
-flow-bin               (Flow, `$ yarn flow init` => `$ flow` to check type)
+flow-bin               (flow, `$ yarn flow init` => `$ flow` to check types)
 
 eslint
 eslint-config-airbnb
@@ -31,6 +32,7 @@ eslint-plugin-jsx-a11y (eslint-config-airbnb)
 eslint-plugin-react    (eslint-config-airbnb)
 eslint-config-prettier (webpack / eslint)
 eslint-plugin-prettier (webpack / eslint)
+eslint-plugin-flow     (flow)
 
 prettier
 
@@ -40,9 +42,16 @@ webpack-dev-server
 ```
 
 ### notes
-* babel: transpile js (sample: es6 to es5)
-* eslint: error check for ECMA Script
-* prettier: format scripts by the rules
+```
+babel    : transpile js (ex: es6 to es5)
+eslint   : error check for ECMA Script
+prettier : format scripts very easily
+flow     : ECMA Script type check
+
+if you are a vscode user,
+recommend the `Flow Language Support` plugin.
+https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
+```
 
 ## .babelrc
 ```

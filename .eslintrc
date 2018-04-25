@@ -1,7 +1,13 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
   "plugins": ["prettier", "react", "jsx-a11y", "import"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "prettier/flowtype"
+  ],
   "rules": {
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
   }
 }
