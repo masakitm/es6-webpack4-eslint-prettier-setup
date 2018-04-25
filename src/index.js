@@ -1,1 +1,3 @@
-// entry point
+
+const asdf = () => 'asf';
+console.log(asdf());

@@ -1,42 +1,29 @@
-const MODE = 'development';
-const enabledSourceMap = (MODE === 'development');
-
 module.exports = {
+  // development / prodution
   mode: 'development',
+
+  // entry / output
   entry: './src/index.js',
   output: {
     path: `${__dirname}/dist`,
     filename: 'bundle.js'
   },
+
+  // dir for dev-server
   devServer: {
     contentBase: 'dist',
     open: true
   },
+
   module: {
     rules: [
+      // use babel-loader to .js files
       {
-        test: /\.scss/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              url: false,
-              sourceMap: enabledSourceMap,
-              importLoaders: 2,
-            }
-          }
-        ]
-      },
-      {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: enabledSourceMap
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
         }
-      },
-      {
-        test: /\.(gif|png|jpg|eot||wof|woff|woff2|ttf|svg)$/,
-        loader: 'url-loader'
       }
     ]
   }
