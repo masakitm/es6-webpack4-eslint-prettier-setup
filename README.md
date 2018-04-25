@@ -75,6 +75,24 @@ https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
 }
 ```
 
+## .eslintrc
+```
+{
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "react", "jsx-a11y", "import"],
+  "extends": [
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
+    "airbnb"
+  ],
+  "rules": {
+    "quotes": ["error", "single"]
+  }
+}
+
+```
+
 ## .editorconfig
 ```
 root = true

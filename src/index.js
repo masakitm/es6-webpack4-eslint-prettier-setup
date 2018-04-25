@@ -1,2 +1,3 @@
 // @flow
-// sample: const a = (val: number) => val;
+// flow sample: const a = (val: number) => val;
+
