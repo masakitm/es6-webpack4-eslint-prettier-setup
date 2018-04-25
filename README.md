@@ -9,7 +9,8 @@ links
 
 format on save: eslint => prettier
 
-##packages -D
+## packages -D
+
 // package name:        (what for)
 
 * babel-core             (webpack)
