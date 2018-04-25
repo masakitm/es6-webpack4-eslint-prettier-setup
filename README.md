@@ -6,6 +6,7 @@ links
 * http://tech-1natsu.hatenablog.com/entry/2018/01/07/154941
 * https://qiita.com/isihigameKoudai/items/520c1cb6540e0641a00c
 * https://babeljs.io/
+* https://github.com/mizchi/rn-universal-components-boilerplate
 
 format on save: eslint => prettier
 
@@ -60,7 +61,6 @@ https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
   "start": "webpack-dev-server --hot",
   "dev": "webpack --mode development",
   "build": "webpack --mode production",
-  "watch": "webpack --watch --mode development",
   "lint": "node_modules/.bin/eslint 'src/**/*.js' --fix"
 }
 …
