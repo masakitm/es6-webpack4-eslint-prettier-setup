@@ -4,7 +4,6 @@
     "start": "webpack-dev-server --hot",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --watch",
     "lint": "node_modules/.bin/eslint 'src/**/*.js' --fix"
   },
   "devDependencies": {

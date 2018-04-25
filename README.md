@@ -53,6 +53,19 @@ recommend the `Flow Language Support` plugin.
 https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
 ```
 
+## package.json scripts
+```
+…
+"scripts": {
+  "start": "webpack-dev-server --hot",
+  "dev": "webpack --mode development",
+  "build": "webpack --mode production",
+  "watch": "webpack --watch --mode development",
+  "lint": "node_modules/.bin/eslint 'src/**/*.js' --fix"
+}
+…
+```
+
 ## .babelrc
 ```
 {
@@ -106,4 +119,26 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+```
+
+## .eslintignore
+```
+.*/node_modules/.*
+dist/bundle.js
+```
+
+## .flowconfig
+```
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
 ```
