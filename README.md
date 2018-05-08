@@ -13,6 +13,8 @@ format on save: eslint => prettier
 ## npm packages
 for devDependencies
 
+-D
+
 ```
 // package name        (what for)
 
@@ -65,6 +67,11 @@ https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
 }
 …
 ```
+
+* start - start local server
+* dev   - build development mode
+* build - build productions mode
+* lint  - eslint
 
 ## .babelrc
 ```

@@ -8,6 +8,9 @@
     "airbnb"
   ],
   "rules": {
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "react/jsx-filename-extension": 0,
+    "no-return-assign": 0,
+    "no-param-reassign": [2, { "props": false }]
   }
 }
