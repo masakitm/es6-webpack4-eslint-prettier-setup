@@ -1,4 +1,7 @@
 {
+  "env": {
+    "browser": true
+  },
   "parser": "babel-eslint",
   "plugins": ["prettier", "react", "jsx-a11y", "import"],
   "extends": [
