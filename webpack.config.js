@@ -1,4 +1,7 @@
+const autoprefixer = require('autoprefixer');
+
 const MODE = 'development';
+
 
 // use sourceMap in development
 const enabledSourceMap = (MODE === 'development');
@@ -31,7 +34,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css/,
+        test: [/\.css/, /\.scss/],
         use: [
           'style-loader',
           {
@@ -39,6 +42,22 @@ module.exports = {
             options: {
               url: false,
               minimize: true,
+              sourceMap: enabledSourceMap,
+              importLoaders: 2,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: enabledSourceMap,
+              plugins: [
+                autoprefixer({ grid: true }),
+              ],
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
               sourceMap: enabledSourceMap,
             },
           },
