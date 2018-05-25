@@ -17,7 +17,7 @@ module.exports = {
     filename: 'bundle.js',
   },
 
-  // dir for dev-server
+  // dev-server djr
   devServer: {
     contentBase: 'dist',
     open: true,
@@ -25,7 +25,7 @@ module.exports = {
 
   module: {
     rules: [
-      // use babel-loader to .js files
+      // use babel-loader with js
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -33,6 +33,8 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+
+      // css, scss, autoprefix
       {
         test: [/\.css/, /\.scss/],
         use: [
