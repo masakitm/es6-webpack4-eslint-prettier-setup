@@ -1,6 +1,11 @@
+const MODE = 'development';
+
+// use sourceMap in development
+const enabledSourceMap = (MODE === 'development');
+
 module.exports = {
   // development / prodution
-  mode: 'development',
+  mode: MODE,
 
   // entry / output
   entry: './src/index.js',
@@ -24,6 +29,20 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.css/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              minimize: true,
+              sourceMap: enabledSourceMap,
+            },
+          },
+        ],
       },
     ],
   },
