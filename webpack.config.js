@@ -42,6 +42,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
+              modules: true,
               url: false,
               minimize: true,
               sourceMap: enabledSourceMap,
